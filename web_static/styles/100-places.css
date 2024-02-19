@@ -23,6 +23,7 @@
       display: inline-block;
       min-height: 250px;
       vertical-align: top;
+      position: relative;
     }
     article h2 {
       font-size: 30px;
@@ -37,9 +38,9 @@
       height: 60px;
       line-height: 60px;
       font-size: 30px;
-      position: relative;
-      float: right;
-      top: -80px; 
+      position: absolute;
+      top: 20px;
+      right: 20px;
     }
     div.information {
       height: 80px;
@@ -71,7 +72,77 @@
       margin-bottom: 10px;
       margin-top: 10px;
     }
-  
+
+    /* New styles for amenities and reviews */
+    article .amenities{
+        width: 100%;
+        margin-top: 40px;
+        padding: 0;
+    }
+    
+    .amenities h2{
+        width: 100%;
+        font-size:16px;
+        border-bottom: 1px solid #DDDDDD;
+        padding-left: 0;
+        text-align: start;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    .amenities li{
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .amenities__list div.tv{
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        background: center/cover no-repeat url("/images/icon_tv.png");
+    }
+    
+    .amenities__list div.wifi{
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        background: center/cover no-repeat url("/images/icon_wifi.png");
+    }
+    
+    .amenities__list div.pets{
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        background: center/cover no-repeat url("/images/icon_pets.png");
+    }
+    
+    /* REVIEWS===================== */
+    .reviews{
+        margin-top: 40px;
+    }
+    
+    .reviews h2{
+        font-size: 16px;
+        border-bottom:1px solid #DDDDDD;
+        text-align: start;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .reviews__list li{
+        list-style: none;
+        margin-bottom: 10px;
+    }
+    
+    .reviews__list h3{
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .reviews__list p{
+        font-size: 12px;
+    }
+     
     .places h1 {
       font-size: 30px;
       font-weight: bold;
