@@ -3,20 +3,17 @@
  */
 
 /* Body style */
-body {
-    margin: 0;
+body{
+	margin: 0;
     padding: 0;
     color: #484848;
     font-size: 14px;
-    font-family: Circular, "Helvetica Neue", Arial, sans-serif;
-  }
-/* Container style */
-.container {
-    margin: 30px auto;
+  font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+ }
+
+.container{
+    margin: auto;
     max-width: 1000px;
-  }
-  
-  /* Strong style */
-  strong {
-    font-weight: bold;
-  }
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
