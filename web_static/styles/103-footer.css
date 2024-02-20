@@ -1,0 +1,38 @@
+/* Footer Styles */
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+    /* Styles for extra small devices (phones, 600px and down) */
+  }
+  
+  @media only screen and (min-width: 600px) {
+    /* Styles for small devices (portrait tablets and large phones, 600px and up) */
+  }
+  
+  @media only screen and (min-width: 768px) {
+    /* Styles for medium devices (landscape tablets, 768px and up) */
+  }
+  
+  @media only screen and (min-width: 992px) {
+    /* Styles for large devices (laptops/desktops, 992px and up) */
+  }
+  
+  /* Footer Container Styles */
+  footer {
+    clear: left;
+    height: 60px;
+    width: 100%;
+    border-top: 1px solid #CCCCCC;
+    display: flex;
+    background-color: #FFF;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Paragraph Styles within Footer */
+  footer p {
+    color: #484848;
+    text-align: center;
+  }
+  
