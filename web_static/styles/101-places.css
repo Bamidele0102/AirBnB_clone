@@ -1,0 +1,148 @@
+/* Flexbox layout for places */
+.places {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: -1; /* Avoid using negative z-index unless necessary */
+  }
+  
+  /* Styling for each place article */
+  .places article {
+    display: flex;
+    flex-wrap: wrap;
+    width: 390px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 4px;
+    border: 1px solid #FF5A5F;
+    box-sizing: border-box;
+  }
+  
+  /* Styling for the places section heading */
+  .places h1 {
+    width: 100%;
+    font-size: 30px;
+    padding-left: 20px;
+    margin: 10px auto auto;
+  }
+  
+  /* Styling for the place name */
+  .places h2 {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    flex-grow: 1;
+  }
+  
+  /* Styling for the circle with price */
+  .article_places_header {
+    width: 100%;
+    display: flex;
+  }
+  
+  .price_by_night {
+    min-width: 60px;
+    height: 60px;
+    color: #FF5A5F;
+    border: 4px solid #FF5A5F;
+    border-radius: 50%;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+  
+  /* Styling for the information box with icons */
+  .information {
+    width: 100%;
+    height: 80px;
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  /* Styling for the user information */
+  .user {
+    padding: 20px 0 5px; /* Adjust padding based on design */
+  }
+  
+  .user b, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Styling for icons */
+  .max_guest,
+  .number_rooms,
+  .number_bathrooms {
+    width: 100px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column-reverse; /* Reverse the order of icons */
+    background-position-x: center;
+    text-align: center;
+  }
+  
+  /* Styling for more information sections */
+  .places .amenities,
+  .places .reviews {
+    margin-top: 40px;
+    width: 100%;
+    height: inherit;
+  }
+  
+  /* Styling for headings in more information sections */
+  .places .amenities h2,
+  .places .reviews h2 {
+    font-size: 16px;
+    text-align: left;
+    border-bottom: 1px solid #DDDDDD;
+  }
+  
+  /* Styling for reviews */
+  .places .reviews h3 {
+    font-size: 14px;
+  }
+  
+  .places .reviews p {
+    font-size: 12px;
+  }
+  
+  /* Styling for amenity icons */
+  .places .amenities ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    margin-bottom: 10px;
+    align-items: end;
+  }
+  
+  /* Background images for amenity icons */
+  .places_amenities_pet_friendly {
+    background-image: url(../images/icon_pets.png);
+  }
+  
+  .places_amenities_tv {
+    background-image: url(../images/icon_tv.png);
+  }
+  
+  .places_amenities_wifi {
+    background-image: url(../images/icon_wifi.png);
+  }
+  
+  /* Styling for amenity icons */
+  .places_amenities_pet_friendly,
+  .places_amenities_tv,
+  .places_amenities_wifi {
+    background-size: cover; /* Ensure icons fit without distortion */
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+  }
+  
